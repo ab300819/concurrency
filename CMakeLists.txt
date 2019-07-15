@@ -29,4 +29,4 @@ include_directories(./)
 #link_libraries(lib_demo)
 #
 #target_link_libraries(1-3-ls apue)
-add_executable(main main.cpp)
+add_executable(main main.cpp TestClass.cpp TestClass.h)
