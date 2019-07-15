@@ -10,10 +10,20 @@
 
 class TestClass {
 
+    friend void testExtraFunc(TestClass testClass);
+
 public:
     TestClass(int age, std::string name);
 
     void print();
+
+    int getAge() const;
+
+    void setAge(int age);
+
+    const std::string &getName() const;
+
+    void setName(const std::string &name);
 
 private:
     int age;

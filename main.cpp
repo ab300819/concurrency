@@ -14,6 +14,6 @@ void print() {
 int main() {
 
     TestClass testClass(12, "hello");
-    testClass.print();
+    testExtraFunc(testClass);
 
 }
