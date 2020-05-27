@@ -7,17 +7,25 @@ public:
 	~Obj();
 };
 
-Obj::Obj() { puts("Objec()"); }
+Obj::Obj() {
+	puts("Objec()");
+}
 
-Obj::~Obj() { puts("~Obj()"); }
+Obj::~Obj() {
+	puts("~Obj()");
+}
 
 class shape_wrapper {
 public:
 	explicit shape_wrapper(Obj* ptr = nullptr) : ptr_(ptr) {}
 
-	~shape_wrapper() { delete ptr_; }
+	~shape_wrapper() {
+		delete ptr_;
+	}
 
-	Obj* get() const { return ptr_; }
+	Obj* get() const {
+		return ptr_;
+	}
 
 private:
 	Obj* ptr_;
