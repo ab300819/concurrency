@@ -29,4 +29,4 @@ include_directories(./)
 #link_libraries(lib_demo)
 #
 #target_link_libraries(1-3-ls apue)
-add_executable(main src/modern_cpp_01.cpp)
+add_executable(main src/dynamic/get_min_coin_count.cpp)
